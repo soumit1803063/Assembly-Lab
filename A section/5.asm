@@ -69,7 +69,7 @@ chk_digit proc
     jle to_array1
     ret
   to_array1:
-    mov array1[bx],al
+    mov ptr[bx],al
     inc bx
     ret    
 chk_digit endp
